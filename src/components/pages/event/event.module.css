@@ -1,0 +1,128 @@
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main .event {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+}
+
+.eventHero {
+    width: 50%;
+    overflow: hidden;
+}
+
+.eventHero>h1 {
+    margin: 14px 0 20px;
+    font-weight: 700;
+    font-size: 42px;
+    color: rgba(13, 17, 17, 1);
+    line-height: 1.2;
+}
+
+.eventHero>p {
+    font-weight: 400;
+    font-size: 15px;
+    width: 70%;
+    margin: 20px auto;
+    color: rgba(157, 166, 165, 1);
+}
+
+.card {
+    border: 1px solid blue;
+}
+
+.cardBox {
+    display: flex;
+    width: 600px;
+    margin-top: 15px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.cardBox>img {
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+.show {
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    padding: 3px 0;
+    background: rgba(18, 18, 18, 1);
+}
+
+.disable {
+    border: 10px solid rgba(217, 217, 217, 1);
+    color: rgba(217, 217, 217, 1);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.control {
+    margin: 20px 0 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.control>button {
+    border: 1px solid;
+}
+
+@media screen and (max-width:1024px) {
+
+    .eventHero>p {
+        width: 100%;
+    }
+
+    .cardBox {
+        width: 100%;
+    }
+
+    .eventHero {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .eventHero>p {
+        width: 100%;
+    }
+
+    .cardBox {
+        width: 100%;
+    }
+
+    .eventHero {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .eventHero>p {
+        width: 100%;
+    }
+
+    .cardBox {
+        width: 100%;
+    }
+
+    .eventHero>p:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .eventHero {
+        width: 100%;
+    }
+
+    .eventHero>h1 {
+        font-size: 16px;
+    }
+   
+}

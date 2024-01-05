@@ -1,0 +1,234 @@
+.main {
+    width: 90%;
+    margin: 120px auto 0;
+}
+
+.hero {
+
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.faq1 {
+    margin: 147px 0 50px;
+}
+
+.faq1>h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.container {
+    /* border: 1px solid red; */
+    width: 60%;
+}
+
+.container>p:nth-child(1) {
+    margin-bottom: 12px;
+}
+
+.container>h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.container h1>span {
+    color: rgba(0, 254, 168, 1);
+}
+
+.container>p:nth-child(3) {
+    width: 75%;
+    margin: 0 auto 60px;
+    font-weight: 400;
+    color: rgba(0, 28, 21, 1);
+}
+
+.inputContainer {
+    height: 60px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 28, 21, 0.3);
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.inputContainer .imgContainer {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.inputContainer .imgContainer>img {
+    width: 60%;
+    height: 100%;
+}
+
+.inputContainer input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    /* border: 1px solid red; */
+}
+
+.greenBg {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    background: rgba(222, 246, 245, 1);
+}
+
+.inputContainer input::placeholder {
+    font-weight: 700;
+}
+
+.accordions {
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.card {
+    border-bottom: 1px solid var(--faq-border-color);
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .faq h2 {
+    font-size: 16px;
+    color: rgba(0, 28, 21, 1);
+    font-weight: 550;
+}
+
+.card .faq p {
+    font-family: var(--font-openSans);
+    color: var(--color-grey);
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.faqImg {
+    width: 10%;
+    display: flex;
+    justify-content: end;
+}
+
+.faqMail {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.faqMail>p {
+    color: rgba(131, 131, 131, 1);
+    margin-bottom: 20px;
+}
+
+.faqMail>h1 {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.faqMail h1>span:first-child {
+    color: black;
+    font-weight: 700;
+}
+
+.green {
+    font-weight: 600;
+    color: rgba(0, 254, 168, 1);
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        width: 80%;
+    }
+
+    .container>p:nth-child(3) {
+        width: 100%;
+    }
+
+    .accordions {
+        width: 85%;
+    }
+    .faqMail {
+        width: 80%;
+    }
+    .faqMail>h1{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container>h1 {
+
+        line-height: 1.2;
+        font-size: 55px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container>p:nth-child(3) {
+        width: 100%;
+        font-size: 15px;
+    }
+    .faqMail {
+        width: 80%;
+    }
+    .faqMail>h1{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .container>h1 {
+
+        line-height: 1.2;
+        font-size: 40px;
+    }
+
+    .container>p:nth-child(3) {
+        margin: 20px 0;
+        font-size: 13px;
+    }
+
+    .inputContainer {
+        width: 100%;
+    }
+
+    .accordions {
+        width: 100%;
+    }
+
+    .faq1 {
+        margin: 20px 0;
+    }
+
+    .faq1>h1 {
+        font-size: 35px;
+        margin: 50px 0 10px;
+    }
+
+    .main {
+        margin-top: 70px;
+    }
+
+    .faqMail {
+        width: 90%;
+    }
+    .faqMail>h1{
+        font-size: 15px;
+    }
+    .greenBg{
+        height: 40vh;
+    }
+}

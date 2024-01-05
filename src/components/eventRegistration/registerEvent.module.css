@@ -1,0 +1,102 @@
+
+.main>p {
+    margin: 30px 0;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.inputContainer>label{
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.inputContainer {
+    width: 80%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+input::placeholder{
+    font-size: 12px;
+}
+.inputContainer>input,
+select {
+    width: 100%;
+    outline: none;
+    height: 50px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2a4;
+    text-transform: capitalize;
+}
+
+.phone {
+    display: flex;
+    width: 100%;
+    outline: none;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f2f2f2a4;
+    text-transform: capitalize;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.select {
+    width: 25%;
+    padding: 5px 15px;
+}
+
+.phoneInput {
+    padding: 5px 15px;
+    width: 80%;
+    outline: none;
+    background: transparent;
+}
+
+.SubmitBtn>button {
+    border: 1px solid black;
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    background: #121212;
+    color: white;
+    margin-top: 40px;
+}
+@media screen and (max-width:768px){
+    .inputContainer {
+        width: 90%;
+    }
+    .phoneInput{
+        width: 100%;
+    }
+    .main {
+        padding: 0;
+    }
+    .span{
+        width: 40%;
+        align-items: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .formContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .inputContainer {
+        width: 100%;
+    }
+    .phoneInput{
+        width: 100%;
+    }
+    .main {
+        padding: 0;
+    }
+    .span{
+        width: 100%;
+    }
+}

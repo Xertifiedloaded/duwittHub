@@ -1,0 +1,145 @@
+.section {
+    width: 90%;
+    margin: 137px auto 0;
+}
+
+.section .aim {
+    width: 45%;
+    text-align: center;
+    margin: 26px auto 0;
+}
+
+.section .aim>p:first-child {
+    font-size: 16px;
+    color: var(--color-light-grey);
+    font-weight: 600;
+}
+
+.section .aim>h1 {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    margin: 6px 0 18px;
+}
+
+.section .aim>p:last-child {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-light-grey);
+    letter-spacing: 0.5px;
+}
+
+.section .hub {
+    display: grid;
+    align-items: center;
+    margin: 96px 0;
+    grid-template-columns: repeat(2, auto);
+}
+.hubMenu:not(:first-child){
+       margin-top: 32px;
+}
+.hubMenu {
+    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+    width: 75%;
+}
+
+.hubImgContainer {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: rgba(251, 251, 251, 1);
+    box-shadow: rgba(13, 15, 28, 0.12);
+}
+
+.hubImgContainer>img {
+    width: 20px;
+
+}
+
+.hub .boy {
+    display: grid;
+    place-items: center;
+}
+
+.hub .boy>img {
+    width: 90%;
+    height: auto;
+}
+
+.listItemsHub>h2 {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--color-light-black);
+}
+
+.listItemsHub>li {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-medium-black);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .section .aim {
+        width: 70%;
+    }
+
+    .section .hub {
+        display: grid;
+    }
+
+    .hub .boy>img {
+        width: 100%;
+    }
+}
+
+.hubMenu {
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .section .aim {
+        width: 90%;
+    }
+
+    .section .hub {
+        display: grid;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .section .aim {
+        width: 100%;
+    }
+
+    .listItemsHub>li {
+        font-size: 13px;
+    }
+
+    .section .aim>h1 {
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+
+    .section .hub {
+        display: block;
+    }
+
+    .section .aim>p:last-child {
+        font-size: 13px;
+    }
+
+}

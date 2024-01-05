@@ -1,0 +1,30 @@
+.faq {
+    width: 60%;
+    margin: 0 auto  70px;
+}
+.faq h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    line-height: 66px;
+    color: var(--color-light-black-hero);
+}
+
+
+
+@media screen and (max-width:768px) {
+    .faq {
+        width: 90%;
+
+    }
+
+    .faq h1 {
+        font-size: 1.5rem;
+    }
+    @media (max-width:600px) {
+        .faq {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}

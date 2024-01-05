@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../../assets/fonts/Satoshi/Fonts/OTF/Satoshi-Medium.otf);
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0 50px;
+
+}
+
+.main>h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+.main .card {
+    display: flex;
+    gap: 95px;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 56px 66px;
+    background-color: var(--creamy-green);
+}
+
+.card .content {
+    width: 50%;
+}
+
+.card .content a>button {
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.card .content>:nth-child(1) {
+    color: var(---font-family-Darker);
+    font-weight: 600;
+    color: rgba(18, 18, 18, 1);
+    font-size: 14px;
+}
+
+.card .content>:nth-child(2) {
+    margin: 2px 0 13px;
+    font-size: 36px;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 1);
+}
+
+.card .content>:nth-child(3) {
+    color: rgba(90, 90, 90, 1);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: var(--font-satoshi);
+}
+
+@media screen and (max-width:1024px) {
+    .blogImg {
+        object-fit: cover;
+
+    }
+
+
+    .card .content>:nth-child(3) {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .main .card {
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .card .content>:nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .blogImg,.card .content{
+        width: 50%;
+    }
+    .card .content a>button{
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+   
+    .main .card {
+        width: 100%;
+        flex-direction: column;
+    }
+    .blogImg,.card .content{
+        width: 100%;
+    }
+
+}

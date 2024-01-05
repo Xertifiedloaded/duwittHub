@@ -1,0 +1,37 @@
+.main {
+    background-color: var(--bg-access);
+    height: 40vh;
+    display: grid;
+    place-items: center;
+}
+
+.grid {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.grid h3 {
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+.grid small {
+    color: rgba(118, 126, 126, 1);
+}
+.accessBtn{
+    margin-top: 40px;
+}
+/* .accessBtn>button {
+    padding: 14px;
+    border-radius: 7px;
+    border: none;
+    color: var(--header-btn-color);
+    background-color: var(--bg-btn-color);
+} */
+@media screen and (max-width:600px) {
+    .grid{
+        width: 90%;
+    }
+}

@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    padding: 20px 0;
+}
+
+.main>button {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.notActive {
+    color: black;
+}
+
+/* .eventDetails{
+    margin-bottom: 200px;
+} */
+.active {
+    color: rgba(0, 254, 168, 1);
+    background: rgba(0, 28, 21, 1);
+}
+
+@media screen and (max-width:600px) {
+    .main>button {
+        padding: 5px;
+        height: 30px;
+        font-size: 10px;
+    }
+}

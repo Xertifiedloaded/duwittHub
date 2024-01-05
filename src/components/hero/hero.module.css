@@ -1,0 +1,102 @@
+.main {
+    width: 70%;
+    margin: 100px auto 50px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.main .hero>p:first-child {
+    font-size: 15px;
+    color: var(--light-grey);
+    font-weight: 500;
+}
+
+.main .hero>p:last-child {
+    font-size: 13px;
+    color: var(--light-grey);
+    font-weight: 500;
+}
+
+.main .hero>h1 {
+    font-size: 50px;
+    width: 70%;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-weight: 700;
+    color: var(--veryDark);
+}
+
+.heroBtn {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heroBtn>button:first-child {
+    padding: 13px 15px;
+    background: var(--bg-btn-color);
+    color: var(--milk-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.heroBtn>button:last-child {
+    border: none;
+    padding: 15px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBtn>button:last-child>.play {
+    border: 1px solid var(--light-grey);
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.heroBtn>button:last-child>span {
+    color: var(--bg-btn-color);
+}
+
+.heroBtn>button:last-child>.play>img {
+    width: 40%;
+}
+
+.heroBtn>button:not(:first-child) {
+    margin-left: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media screen and (max-width:850px) {
+    .main .hero>h1 {
+        width: 100%;
+        margin: 0;
+        font-size: 1.7rem;
+    }
+
+    .journey {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .heroBtn {
+        margin-top: 25px;
+    }
+
+    .main {
+        width: 100%;
+    }
+}

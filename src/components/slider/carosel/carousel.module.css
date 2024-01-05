@@ -1,0 +1,49 @@
+.main {
+    min-height: 30vh;
+    min-width: 40vw;
+    padding: 10px;
+}
+
+.slide .text {
+    color: var(---color-off-white);
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 10px 0;
+}
+
+.slide .information {
+    display: flex;
+    align-items: center;
+}
+.personalInfo{
+    display: flex;
+   
+    flex-direction: column;
+}
+.personalInfo>p:first-child{
+    color: var(--milk-color);
+    font-weight: 600;
+  
+}
+.personalInfo>p:last-child{
+    color: var(---color-off-white);
+    font-family: var(---font-albert-sans);
+}
+.information .personalImg>img{
+width: 80%;
+}
+@media screen and (max-width:600px){
+    .main{
+        padding: 20px 0;
+    }
+    .slide{
+        display: flex;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .slide .text{
+      padding: 10px;
+        text-align: center;
+    }
+}

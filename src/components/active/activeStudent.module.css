@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    align-items: center;
+}
+.activeStudent{
+    text-align: center;
+}
+.activeStudent>p{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.main>:first-child {
+    left: 10px;
+    background-color: var(--color-royal-blue);
+}
+
+
+.main>:nth-child(2) {
+    background-color: var(--color-yellow);
+}
+
+.main>:nth-child(3) {
+    right: 10px;
+    background-color: var(--color-light-pink);
+}
+
+.main>:nth-child(4) {
+    right: 20px;
+    background-color: var(--color-light-purple);
+}
+
+.main>:last-child {
+    right: 30px;
+    background-color: var(--color-yellow);
+}

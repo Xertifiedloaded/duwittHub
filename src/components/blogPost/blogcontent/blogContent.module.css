@@ -1,0 +1,79 @@
+.main {
+    background: var(--creamy-green);
+    min-height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 110px 0 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    background: var(--creamy-green);
+}
+
+.blogCardContainer>img{
+    width: 100%;
+}
+.mainCard {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    border-radius: 5px;
+
+}
+.CardContent{
+    padding: 21px 30px 39px;
+   
+}
+.CardContent>a{
+    border-bottom: 1px solid black;
+}
+.CardContent>p:first-child{
+    font-weight: 600;
+    font-size: 16px;
+    font-family:var(--font-family-Darker);
+    color: var(--header-btn-color);
+}
+.CardContent>h1{
+    width: 80%;
+    line-height: 1.1;
+  
+    font-size: 36px;
+    color: rgba(24, 24, 23, 1);
+}
+.CardContent>p:nth-child(3){
+ font-weight: 400;
+ margin: 10px 0 18px;
+ line-height: 1.5;
+ font-size: 15px;
+ color: rgba(110, 110, 110, 1);
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+  
+}
+
+@media screen and (max-width:768px) {
+    .CardContent>h1{
+        font-size: 22px;
+        width: 100%;
+    }
+    .CardContent{
+        padding: 10px 15px 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .CardContent>h1{
+        font-size: 20px;
+        width: 100%;
+    }
+}

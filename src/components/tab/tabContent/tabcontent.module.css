@@ -1,0 +1,66 @@
+.main {
+    display: flex;
+    align-items: center;
+    padding: 43px 78px;
+}
+
+.mainContent {
+    width: 45%;
+
+}
+
+.main .mainContent>h1 {
+    color: rgba(24, 24, 23, 1);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main .mainContent>p:nth-child(3) {
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: rgba(110, 110, 110, 1);
+}
+
+.main .mainContent>a {
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+}
+
+.mainImgContainer {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+@media(max-width:768px) {
+    .main {
+        text-align: center;
+        display: block;
+        padding: 40px;
+    }
+
+    .mainContent {
+        width: 100%;
+
+    }
+    .mainImgContainer {
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .main {
+        display: flex;
+        text-align: start;
+    }
+    .mainContent {
+        width: 60%;
+    
+    }
+    .mainImgContainer {
+        width: 50%;
+    }
+    .mainImgContainer>img{
+        width: 80%;
+    }
+}

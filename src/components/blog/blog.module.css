@@ -1,0 +1,79 @@
+
+.main{
+    padding: 50px 0;
+}
+.main .content{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main .content>h2{
+    font-weight: 600;
+    font-size: 33px;
+    color: var(--color-light-black-);
+}
+.main .content>p{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-hue);
+  padding: 10px 0 30px 0;
+}
+.boxContainer{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+}
+.boxContainer>.box{
+   /* width: 45%; */
+   background: rgba(241, 241, 241, 0.3);
+}
+.box>.imgContainer{
+width: 100%;
+}
+.imgContainer>img{
+    width: 100%;
+
+}
+.boxContent{
+    padding: 20px 15px;
+}
+.boxContent>p:first-child{
+    color: var(--header-btn-color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(---font-family-Darker);
+}
+.BlogInfo{
+    width: 95%;
+}
+.BlogInfo>h3{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.2;
+}
+.BlogInfo>.Blogcontent{
+    color: var(--color-hue);
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.BlogInfo>.more{
+    font-family: var(---font-family-Darker);
+    font-size: 20px;
+    font-weight: 700;
+}
+@media screen and (max-width:768px){
+    .main .content{
+        width: 80%;
+    }
+}
+@media screen and (max-width:600px) {
+    .boxContainer{
+     
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main .content{
+        width: 100%;
+    }
+}

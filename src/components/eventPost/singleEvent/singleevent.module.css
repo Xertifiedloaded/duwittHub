@@ -1,0 +1,133 @@
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main .navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.main .hero {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero .singleEventImg {
+    display: flex;
+    justify-content: end;
+}
+
+.hero .singleEventImg>img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero .singleEventContent>h1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+.heroMode {
+    margin-top: 20px;
+}
+.heroMode .mode {
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: rgba(217, 255, 242, 1);
+}
+.heroMode .navigeBack{
+    padding-top: 30px;
+}
+.EventInfo {
+    display: flex;
+    align-items: stretch;
+    gap: 60px;
+    margin: 60px 0;
+    justify-content: space-between;
+}
+
+.EventInfo .eventContent {
+    width: 70%;
+}
+
+.EventInfo .eventContentBox {
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 30px;
+    line-height: 2.3;
+    border-radius: 5px;
+
+}
+
+.eventDetails {
+    width: 30%;
+
+}
+
+.EventInfo .eventContentBox>p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.eventDetails .meeting {
+    border: 1px solid black;
+    height: 400px;
+    padding: 20px;
+}
+
+.EventInfo .eventContent>p {
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+  
+    .hero .singleEventContent>h1 {
+        font-size: 35px;
+    }
+    .EventInfo .eventContent{
+        width: 70%;
+    }
+    .EventInfo .eventContentBox {
+        /* width: 60%; */
+    }
+
+    .eventDetails {
+        width: 40%;
+    }
+
+    .EventInfo {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero .singleEventContent>h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main .hero {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero .singleEventContent>h1 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .EventInfo .eventContent{
+        width: 100%;
+    }
+    .EventInfo {
+        flex-direction: column;
+    }
+
+    .EventInfo .eventContentBox,
+    .eventDetails {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
